@@ -8,19 +8,19 @@
   <link rel="dns-prefetch" href="http://chance-lee.github.io">
   <title>统计学习方法（李航） | Charon&#39;s orbit</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="统计学习方法 离散数据 监督问题  1 统计学习方法概述 统计学习的定义、研究对象和方法 有监督学习、无监督学习 三要素：模型、策略、算法 模型选择：正则化、交叉验证、学习泛化 生成模型与判别模型 有监督学习方法：分类问题、标注问题、回归问题  1.1 统计学习I. 含义 定义：如果一个系统能够通过执行某个过程改进它的性能  特点 基于计算机 数据驱动 对数据进行预测和分析 构建模型 概率论、统计">
+  <meta name="description" content="统计学习方法 离散数据 监督问题  1 统计学习方法概述 统计学习的定义、研究对象和方法 有监督学习、无监督学习 三要素：模型、策略、算法 模型选择：正则化、交叉验证、学习泛化 生成模型与判别模型 有监督学习方法：分类问题、标注问题、回归问题">
 <meta name="keywords" content="读书笔记">
 <meta property="og:type" content="article">
 <meta property="og:title" content="统计学习方法（李航）">
 <meta property="og:url" content="http://chance-lee.github.io/2019/05/10/统计学习方法（李航）/index.html">
 <meta property="og:site_name" content="Charon&#39;s orbit">
-<meta property="og:description" content="统计学习方法 离散数据 监督问题  1 统计学习方法概述 统计学习的定义、研究对象和方法 有监督学习、无监督学习 三要素：模型、策略、算法 模型选择：正则化、交叉验证、学习泛化 生成模型与判别模型 有监督学习方法：分类问题、标注问题、回归问题  1.1 统计学习I. 含义 定义：如果一个系统能够通过执行某个过程改进它的性能  特点 基于计算机 数据驱动 对数据进行预测和分析 构建模型 概率论、统计">
+<meta property="og:description" content="统计学习方法 离散数据 监督问题  1 统计学习方法概述 统计学习的定义、研究对象和方法 有监督学习、无监督学习 三要素：模型、策略、算法 模型选择：正则化、交叉验证、学习泛化 生成模型与判别模型 有监督学习方法：分类问题、标注问题、回归问题">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="c:/Users/Chance/AppData/Roaming/Typora/typora-user-images/1556612856403.png">
-<meta property="og:updated_time" content="2019-05-09T16:27:06.852Z">
+<meta property="og:updated_time" content="2019-05-09T16:54:53.362Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="统计学习方法（李航）">
-<meta name="twitter:description" content="统计学习方法 离散数据 监督问题  1 统计学习方法概述 统计学习的定义、研究对象和方法 有监督学习、无监督学习 三要素：模型、策略、算法 模型选择：正则化、交叉验证、学习泛化 生成模型与判别模型 有监督学习方法：分类问题、标注问题、回归问题  1.1 统计学习I. 含义 定义：如果一个系统能够通过执行某个过程改进它的性能  特点 基于计算机 数据驱动 对数据进行预测和分析 构建模型 概率论、统计">
+<meta name="twitter:description" content="统计学习方法 离散数据 监督问题  1 统计学习方法概述 统计学习的定义、研究对象和方法 有监督学习、无监督学习 三要素：模型、策略、算法 模型选择：正则化、交叉验证、学习泛化 生成模型与判别模型 有监督学习方法：分类问题、标注问题、回归问题">
 <meta name="twitter:image" content="c:/Users/Chance/AppData/Roaming/Typora/typora-user-images/1556612856403.png">
   
     <link rel="alternative" href="/atom.xml" title="Charon&#39;s orbit" type="application/atom+xml">
@@ -49,11 +49,11 @@
 <div class="overlay" style="background: #4d4d4d"></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
-		<a href="/" class="profilepic">
+		<a href class="profilepic">
 			<img src class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">Charon Lee</a></h1>
+		  <h1 class="header-author"><a href>Charon Lee</a></h1>
 		</hgroup>
 		
 
@@ -189,6 +189,7 @@
 <li>生成模型与判别模型</li>
 <li>有监督学习方法：分类问题、标注问题、回归问题</li>
 </ul>
+<a id="more"></a>
 <h2 id="1-1-统计学习"><a href="#1-1-统计学习" class="headerlink" title="1.1 统计学习"></a>1.1 统计学习</h2><h4 id="I-含义"><a href="#I-含义" class="headerlink" title="I. 含义"></a>I. 含义</h4><ul>
 <li>定义：如果一个系统能够通过执行某个过程改进它的性能 </li>
 <li>特点<ul>
