@@ -53,9 +53,9 @@
 		<nav class="header-menu">
 			<ul>
 			
-				<li><a href="/">主页</a></li>
+				<li><a href="/">Home Page</a></li>
 	        
-				<li><a href="/tags/随笔/">随笔</a></li>
+				<li><a href="/tags/MachineLearning/">Machine Learning</a></li>
 	        
 			</ul>
 		</nav>
@@ -133,9 +133,9 @@
 				<ul style="width: 50%">
 				
 				
-					<li style="width: 50%"><a href="/">主页</a></li>
+					<li style="width: 50%"><a href="/">Home Page</a></li>
 		        
-					<li style="width: 50%"><a href="/tags/随笔/">随笔</a></li>
+					<li style="width: 50%"><a href="/tags/MachineLearning/">Machine Learning</a></li>
 		        
 				</ul>
 			</nav>
@@ -152,40 +152,43 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-统计学习方法（李航）" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-SVM" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/05/10/统计学习方法（李航）/">统计学习方法（李航）</a>
+      <a class="article-title" href="/2019/05/13/SVM/">SVM</a>
     </h1>
   
 
         
-        <a href="/2019/05/10/统计学习方法（李航）/" class="archive-article-date">
-  	<time datetime="2019-05-09T16:26:51.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-10</time>
+        <a href="/2019/05/13/SVM/" class="archive-article-date">
+  	<time datetime="2019-05-13T11:23:20.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-13</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="统计学习方法"><a href="#统计学习方法" class="headerlink" title="统计学习方法"></a>统计学习方法</h1><ul>
-<li>离散数据</li>
-<li>监督问题</li>
+        <h1 id="支持向量机（SVM）"><a href="#支持向量机（SVM）" class="headerlink" title="支持向量机（SVM）"></a>支持向量机（SVM）</h1><p>​    支持向量机（support vector machines， SVM） 是一种二类分类模型。 它的基本模型是定义在特征空间上的间隔最大的线性分类器， 间隔最大使它有别于感知机； 支持向量机还包括核技巧， 这使它成为实质上的非线性分类器。 支持向量机的学习策略就是间隔最大化， 可形式化为一个求解凸二次规划（convex quadratic programming） 的问题， 也等价于正则化的合页损失函数的最小化问题。 支持向量机的学习算法是求解凸二次规划的最优化算法。 </p>
+<p>​    本文将从以下几个方面展开介绍：</p>
+<ul>
+<li>线性可分支持向量机（linear support vector machine in linearly separable case）<ul>
+<li>硬间隔最大化（hard margin maximization）：线性可分支持向量机， 硬间隔支持向量机</li>
+<li>通过软间隔最大化（soft margin maximization）：训练数据近似线性可分， 线性支持向量机， 软间隔支持向量机</li>
 </ul>
-<h1 id="1-统计学习方法概述"><a href="#1-统计学习方法概述" class="headerlink" title="1 统计学习方法概述"></a>1 统计学习方法概述</h1><ul>
-<li>统计学习的定义、研究对象和方法</li>
-<li>有监督学习、无监督学习</li>
-<li>三要素：模型、策略、算法</li>
-<li>模型选择：正则化、交叉验证、学习泛化</li>
-<li>生成模型与判别模型</li>
-<li>有监督学习方法：分类问题、标注问题、回归问题</li>
+</li>
+<li>线性支持向量机（linear support vector machine）</li>
+<li>非线性支持向量机（non-linear support vector machine）<ul>
+<li>使用核技巧（kernel trick） 及软间隔最大化</li>
+</ul>
+</li>
+<li>支持向量回归</li>
 </ul>
         
-          <a class="article-more-a" href="/2019/05/10/统计学习方法（李航）/#more">more >></a>
+          <a class="article-more-a" href="/2019/05/13/SVM/#more">more >></a>
         
       
 
@@ -199,7 +202,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">读书笔记</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">MachineLearning</a>
         		</li>
       		
 		</ul>
@@ -209,7 +212,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/05/10/统计学习方法（李航）/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/05/13/SVM/">展开全文 >></a>
         </p>
       
 
@@ -424,7 +427,7 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">读书笔记</a>
+                <a href="javascript:void(0)" class="js-tag color1">MachineLearning</a>
               </li>
             
             <div class="clearfix"></div>
